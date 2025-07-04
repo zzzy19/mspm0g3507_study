@@ -35,13 +35,13 @@
 int main(void)
 {
      SYSCFG_DL_init();
-DL_GPIO_setPins(LED1_PORT, LED1_PIN_A0_PIN);
+DL_GPIO_setPins(LED1_PORT, LED1_PIN_A0_PIN)
 /*
 DL_GPIO_togglePins(LED1_PORT, LED1_PIN_A0_PIN)
 DL_GPIO_clearPins(LED1_PORT, LED1_PIN_A0_PIN)
 */
      while (1) {
-        delay_cycles(CPUCLK_FREQ );
-        DL_GPIO_togglePins(LED1_PORT, LED1_PIN_A0_PIN);
+        delay_cycles(CPUCLK_FREQ )
+        DL_GPIO_togglePins(LED1_PORT, LED1_PIN_A0_PIN)
     }
 }
